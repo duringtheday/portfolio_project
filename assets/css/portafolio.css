@@ -1,0 +1,70 @@
+/* #portafolio {
+    flex-wrap: wrap;
+} */
+
+#portafolio button {
+    padding: 0;
+    display: inline-block;
+    margin: 1rem;
+    max-width: 400px;
+    overflow: hidden;
+    background: var(--grey3);
+    box-shadow: 0 0 10px 1px var(--gray3);
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    position: relative;
+    vertical-align: top; 
+}
+
+#portafolio h1 {
+    margin: 0 auto;
+    top: 40%; 
+    left: 50%;
+    transform: translate(-50%, -180%);
+    display: block;
+    font-size: 10rem;
+    color: var(--white);
+    text-align: center;
+    position: absolute;
+    z-index: 2;
+    opacity: 0.3;
+    transition: opacity 0.8s ease-in-out, transform 0.3s ease-in-out; 
+}
+
+#portafolio button:hover h1 {
+    transform: translate(-50%, -50%);
+    opacity: 0.7; 
+}
+
+#portafolio img {
+    padding: 0;
+    display: block;
+    width: 100%; 
+    max-height: 300px;
+    background: var(--grey3);
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    z-index: 0;
+}
+
+#portafolio button::before {
+    content: ""; 
+    background: var(--primary);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+    z-index: 1; 
+}
+
+#portafolio button:hover::before {
+    opacity: 0.6;
+}
+
+#portafolio button:hover img {
+    transform: scale(1.1);
+}

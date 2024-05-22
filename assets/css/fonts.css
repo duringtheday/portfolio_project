@@ -1,0 +1,52 @@
+html, body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-dark);
+    text-align: center;
+    font-size: 14px;
+}
+
+/* nav a,
+nav label {
+    color: var(--white);
+    line-height: 1.2rem;
+} */
+
+section {
+    letter-spacing: 0.15rem;
+}
+
+header, 
+footer, 
+section.even {
+    color: var(--white);
+    letter-spacing: 0.13rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h1, h2, h3, h4 {
+    letter-spacing: 0.13rem;
+}
+
+h1, h3 {
+    text-transform: uppercase;
+}
+
+h4 {
+    color: var(--secondary);
+    font-size: 1.5rem;
+    letter-spacing: 0.13rem;
+}
+
+#experience h3 {
+    color: var(--primary-dark);
+}
+
+#contact label {
+    color: var(--white);
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+}
+

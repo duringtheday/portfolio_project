@@ -1,0 +1,58 @@
+/* #skillset {
+    flex-wrap: wrap;
+} */
+
+#skillset.even {
+    background: linear-gradient(45deg, var(--black2), var(--primary-dark)) no-repeat;
+}
+
+#skillset > div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.7rem;
+    margin: 1rem;
+}
+
+#skillset img {
+    /* border-radius: 1rem; */
+    max-width: 7rem;
+    cursor: context-menu;
+}
+
+#skillset > div > div {
+    position: relative;
+}
+
+#skillset span {
+    width: 120px;
+    background: rgba(255, 216, 43, 0.75);
+    color: var(--black);
+    font-weight: 900;
+    text-align: center;
+    padding: 0.5rem 0;
+    border-radius: 0.5rem;
+    position: absolute;
+    z-index: 1;
+    top: -40%;
+    left: 50%;
+    transform: translate(-60px, 10px);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, tansform 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+#skillset > div > div:hover span {
+    opacity: 1;
+    transform: translate(-60px, 0);
+}
+
+#skillset span::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(255, 216, 43, 0.75) transparent transparent transparent;
+}

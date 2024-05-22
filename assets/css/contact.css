@@ -1,0 +1,321 @@
+#contact {
+    background: linear-gradient(45deg,  var(--secondary-dark), var(--secondary)) no-repeat;
+}
+
+#contact h3 {
+    color: var(--white);
+}
+
+form {
+    /* margin: 1.5rem auto;
+    padding: 30px;
+    width: 50%;
+    background: var(--primary-dark); */
+    margin: 100px auto;
+    max-width: 700px;
+    font-size: 1.3rem;
+}
+
+form label {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 2.5rem auto;
+    padding: 20px 10px;
+    background: var(--primary-dark);
+    color: white;
+    font-size: 2rem;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+input, textarea,
+input:focus,
+textarea:focus {
+    width: 90%;
+    margin: 1.5rem 0 2rem;
+    padding: 0.8rem 1rem;
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: none;
+    cursor: pointer;
+    
+}
+
+textarea {
+    resize: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-size: 1.5rem;
+    color: #ffd279;
+}
+
+form button {
+    background: var(--grey);
+    color: var(--white);
+    margin: 1rem;
+    border: none;
+    padding: 1rem;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: scale 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+form button:hover {
+    transform: scale(1.1);
+    background: var(--grey3);
+}
+
+#social-media {
+    margin-top: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem; /* Adjust the spacing between icons */
+}
+
+#social-media a {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(45deg, var(--grey), var(--primary-dark));
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    transition: scale 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+}
+
+#social-media a:hover {
+    transform: scale(1.2);
+    border-radius: 50%;
+    /* background: white; */
+}
+
+#social-media .fa-brands {
+    font-size: 2rem;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transform: scale(1);
+    transition: scale 0.3s ease-in-out, color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+}
+
+#social-media .fa-github:hover {
+    transform: scale(1.2);
+    color: white;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(38, 38, 38, 1), 
+    rgba(164, 164, 164, 0.8), rgba(38, 38, 38, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+    border-radius: 50%;
+}
+
+#social-media .fa-linkedin:hover {
+    transform: scale(1.2);
+    color: white;
+    background: linear-gradient(45deg, #005582, #005582, #005582, #007dc1, 
+    #7cd1ffc8, #007abb, #005582, #005582);
+    border-radius: 50%;
+}
+
+#social-media .fa-youtube:hover {
+    transform: scale(1.2);
+    color: white;
+    background: linear-gradient(45deg,  #CC0000,  #CC0000,  #CC0000,  #ff0000, 
+    #ff7b7b,  #ea0f0f,  #CC0000,  #CC0000);
+    border-radius: 50%;
+}
+
+#social-media .fa-facebook:hover {
+    transform: scale(1.2);
+    color: white;
+    background: linear-gradient(45deg,  #145dbf,  #145dbf,  #145dbf,  #197dff, 
+    #7db5ff, #2986ff,  #145dbf, #145dbf);
+    border-radius: 50%;
+}
+
+#social-media .fa-tiktok {
+    /* color: #ffffff; */
+
+}
+
+#social-media .fa-tiktok:hover {
+    transform: scale(1.2);
+    color: black;
+    background: linear-gradient(45deg, #000000, #69C9D0,  #EE1D52);
+    border-radius: 50%;
+}
+
+/* #social-media .fa-tiktok:hover::after #cyan {
+    transform: scale(1.2) translate(1px, 1px);
+    color: #69C9D0;
+    border-radius: 50%;
+}
+
+#social-media .fa-tiktok:hover::before #red {
+    transform: scale(1.2) translate(2px, 2px);
+    color: #EE1D52;
+    border-radius: 50%;
+} */
+
+
+#social-media .fa-whatsapp:hover {
+    transform: scale(1.2); 
+    color: white;
+    background: linear-gradient(45deg,  #25d366,  #25d366,  #25d366,  #3aff82, 
+    #7cffac, #44ff89,  #25d366, #25d366);
+    border-radius: 50%;
+}
+
+
+/* #social-media .fa-tiktok:hover {
+    transform: scale(1.2);
+    color: #69C9D0;
+    color: black;
+}
+
+.fa-github:hover {
+    transform: scale(1.2);
+    color: black;
+} */
+
+/* .fa-brands.fa-tiktok { */
+    /* background: linear-gradient(180deg, #000000, #69C9D0, #EE1D52); */
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
+    /* transition: color 0.3s ease-in-out; */
+    /* transition: background 0.3s ease-in-out; */
+/* } */
+
+/* #social-media .fa-tiktok:hover {
+    transform: scale(1.2);
+    background: linear-gradient(180deg, #000000, #69C9D0, #EE1D52);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
+
+
+
+
+
+/* #social-media .fa-tiktok::before,
+#social-media .fa-tiktok::after {
+    content: "\f305"; Unicode for TikTok icon
+    font-family: "Font Awesome 5 Brands"; Font family for brand icons
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease; */
+
+/* #social-media .fa-tiktok::before {
+    color: #69C9D0; Cyan color
+    transform: translate(2px, 2px); Adjust position
+}
+
+#social-media .fa-tiktok::after {
+    color: #EE1D52; Red color
+    transform: translate(4px, 4px); Adjust position
+}
+
+#social-media .fa-tiktok:hover {
+    transform: scale(1.2); Enlarge icon on hover
+    color: black; Keep black color on top
+}
+
+#social-media .fa-tiktok:hover::before {
+    transform: translate(4px, 4px); Move cyan layer
+}
+
+#social-media .fa-tiktok:hover::after {
+    transform: translate(6px, 6px); Move red layer
+} */
+
+
+
+
+/* #social-media .fa-tiktok {
+    position: relative;
+    display: inline-block;
+    color: black;
+    font-size: 2rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#social-media .fa-tiktok::before {
+    content: "\f305";
+    font-family: "Font Awesome 5 Brands";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #69C9D0;
+    transform: translate(2px, 2px);
+    transition: transform 0.3s ease;
+}
+
+#social-media .fa-tiktok::after {
+    content: "";
+    content: "\f305";
+    font-family: "Font Awesome 5 Brands";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #EE1D52;
+    transform: translate(4px, 4px);
+    transition: transform 0.3s ease;
+}
+
+#social-media .fa-tiktok:hover {
+    transform: scale(1.2);
+    color: black;
+}
+
+#social-media .fa-tiktok:hover::before {
+    color: #69C9D0;
+    transform: translate(4px, 4px);
+}
+
+#social-media .fa-tiktok:hover::after {
+    color: #EE1D52;
+    transform: translate(6px, 6px);
+} */
+
+
+
+
+
+
+
+
+/* .fa-instagram:hover {
+    transform: scale(1.2);
+    color: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #FFDC80, #FFEF5A);
+} */
+
+#social-media .fa-instagram:hover {
+    transform: scale(1.2);
+    color: white;
+    background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #FFDC80, #FFEF5A);
+    /* -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    border-radius: 50%;
+}

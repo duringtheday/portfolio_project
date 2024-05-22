@@ -1,0 +1,95 @@
+/* Menu container styling */
+.menu {
+    background: linear-gradient(45deg, var(--primary-dark), var(--primary));
+    box-shadow: 0 0 10px 1px var(--gray3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+.menu a span {
+    margin-bottom: 20px;
+    transform: translateY(-20px); 
+}
+
+/* Menu links styling */
+span {
+    margin-left: 10px;
+    color: white;
+    letter-spacing: 0.2rem;
+}
+
+span:hover {
+    color: var(--secondary-dark);
+}
+
+/* Hamburger icon styling */
+#hamburguer {
+    display: none;
+}
+
+/* Label styling for hamburger icon */
+.menu label {
+    padding: 5px 10px;
+    background: var(--primary-dark);
+    color: var(--white);
+    font-size: 2rem;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.menu label:hover {
+    color: var(--secondary-dark);
+    background: var(--grey);
+}
+
+/* Navbar container styling */
+#navbar {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    min-width: 100px;
+    background: var(--primary-dark);
+    border-radius: 15px;
+    display: none; /* Initially hidden */
+    z-index: 1;
+}
+
+/* Navbar list styling */
+#navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Navbar list item styling */
+#navbar ul li a {
+    margin: 0;
+    padding: 2rem 0;
+    width: 300px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+    transition: background 300ms ease-in-out, border 300ms ease-in-out;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: block;
+}
+
+#navbar ul li a:hover {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background: var(--grey);
+    color: var(--secondary-dark);
+}
+
+/* Show navbar when hamburger is checked */
+.menu #hamburguer:checked ~ #navbar {
+    display: block;
+}
