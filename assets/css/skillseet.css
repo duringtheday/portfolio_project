@@ -24,20 +24,20 @@
 }
 
 #skillset span {
+    position: absolute;
+    top: -40%;
+    left: 50%;
+    padding: 0.5rem 0;
     width: 120px;
     background: rgba(255, 216, 43, 0.75);
     color: var(--black);
     font-weight: 900;
     text-align: center;
-    padding: 0.5rem 0;
     border-radius: 0.5rem;
-    position: absolute;
     z-index: 1;
-    top: -40%;
-    left: 50%;
     transform: translate(-60px, 10px);
     opacity: 0;
-    transition: opacity 0.3s ease-in-out, tansform 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
     pointer-events: none;
 }
 
@@ -47,12 +47,38 @@
 }
 
 #skillset span::after {
-    content: "";
     position: absolute;
+    content: "";
     top: 100%;
     left: 50%;
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
     border-color: rgba(255, 216, 43, 0.75) transparent transparent transparent;
+}
+
+/* #skillset { */
+    /* Ensure this container is positioned */
+    /* position: relative; 
+} */
+
+
+#skillset > div > div #ai {
+    position: absolute;
+    font-size: 13px;
+    transform: translate(-70px, -10px); 
+}
+#skillset > div > div:hover #ai {
+    position: absolute;
+    transform: translate(-70px, -20px); 
+    opacity: 1;
+}
+#skillset > div > div #c4d {
+    position: absolute;
+    transform: translate(-70px, 15px); 
+}
+#skillset > div > div:hover #c4d {
+    position: absolute;
+    transform: translate(-70px, 5px);
+    opacity: 1;
 }
